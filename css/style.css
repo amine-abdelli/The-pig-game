@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #090e26;
+  background: linear-gradient(162deg, #090e26 0%, #790960 35%, #5000ff 100%);
+  height: 100vh;
+}
+body .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .btn {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 3rem;
+  padding: 0.5rem 3rem;
+  z-index: 1;
+}
+body .wrapper .btn:hover {
+  opacity: 0.6;
+}
+body .wrapper .btn:hover:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+body .wrapper .newGame {
+  top: 10%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .rollDice {
+  top: 70%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .hold {
+  top: 80%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .dice {
+  z-index: 1;
+  background-color: white;
+  top: 50%;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .dice img {
+  width: 12.5rem;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .player {
+  text-transform: uppercase;
+  font-size: 6rem;
+  padding: 3rem;
+}
+body .wrapper .currentScore {
+  display: inline-block;
+  padding: 2rem 5rem;
+  background: #a5298a;
+  border-radius: 1rem;
+  color: white;
+  font-weight: normal;
+  font-size: 3rem;
+}
+body .wrapper .score {
+  font-size: 7rem;
+  padding: 5rem;
+  color: #a5298a;
+  font-weight: bold;
+}
+body .wrapper .left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: inherit;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100rem;
+  height: 60rem;
+  text-align: center;
+}
+body .wrapper .right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: inherit;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100rem;
+  text-align: center;
+  height: 60rem;
+  transition: all 0.5s ease;
+}
+body .modal {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40rem;
+  width: 40rem;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .modal h1 {
+  padding: 2rem;
+}
+body .modal .closeModal {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: flex-end;
+  text-align: right;
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */

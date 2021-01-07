@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css " />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>The pig game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <button class="btn newGame">Nouvelle partie</button>
+        <button class="btn rollDice">lancer</button>
+        <button class="btn hold">hold</button>
+
+        <div class="dice"></div>
+        <div class="row">
+          <div class="col left">
+            <p class="player1 player">Joueur 1</p>
+            <p class="scoreP1 score">0</p>
+            <div class="currentScore">
+              <p class="current">score</p>
+              <p class="currentP1 current">0</p>
+            </div>
+          </div>
+          <div class="col right">
+            <p class="player2 player">Joueur 2</p>
+            <p class="scoreP2 score">0</p>
+            <div class="currentScore">
+              <p class="current">score</p>
+              <p class="current currentP2">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="closeModal">x</div>
+      <h1>Règle du jeu</h1>
+      'The Pig Game' est un jeu très simple. Chaque joueur jète un dé autant de
+      fois qu'il le souhaite. Le résultat de chaque lancé s'additionne avec le
+      précédent (exemple: jet n°1: 4. Score = 4; jet n°2: 6. Score = 4+6 = 10
+      etc...), mais le score retombe à 0 si le dé retourne un '1'. En cliquant
+      sur 'hold', on conserve son score qui vient s'additionner aux précédents.
+      Le premier joueur à atteindre 100 a gagné.
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
