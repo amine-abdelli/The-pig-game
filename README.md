@@ -7,4 +7,4 @@
 The purpose of this game was to understand the basics of <strong>vanilla javascript's addEventListener</strong> and also to take a first shot at <strong>sass</strong> building for the first time a simple game interface.
 
 <h2>FIREBASE hosting</h2>  
-Click <a href="https://thepiggame-9cc77.web.app/">here</a> to take a look at it.
+Click <a href="https://thepiggame-9cc77.web.app/">here</a> to take a look at the desktop version.
